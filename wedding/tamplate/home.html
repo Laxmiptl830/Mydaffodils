@@ -1,0 +1,142 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mydaffodils</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="{% static 'images/Logo_Image.jpg' %}">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <header>
+    <div class="navbar navfull">
+        <div class="logo logofull">
+            <div class="myLogo" style="background-image: url('{% static "images/Logo_Image.jpg" %}')"></div>
+            <button class="menu menufull" onclick="toggleNavLinks()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+
+        <ul class="navlinks navlinkfull">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#Glimpses">Glimpses</a></li>
+            <li><a href="{% url 'contact' %}">Contact Us</a></li>
+        </ul>
+    </div>
+   </header>
+
+   <!-- Hero Section -->
+   <section id="hero">
+    <div class="hero">
+        <video autoplay muted loop playsinline class="hero-video" controlslist="nodownload nofullscreen noremoteplayback" disablepictureinpicture>
+            <source src="{% static 'videos/hero_backgrond.mp4' %}" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Daffodils Groups Of Institutions</h1>
+            <p>Inspiring minds, shaping futures</p>
+        </div>
+    </div>
+   </section>
+
+   <!-- Tagline -->
+   <section id="tagline">
+    <div class="tagline">
+        Transforming lives through... <br>
+        Vidya - Modern Education <br>
+        Sadvidya - Traditional Education <br>
+        Brahmavidya - Spiritual Education <br>
+    </div>
+   </section>
+
+   <!-- About Section -->
+   <section id="about">
+    <div class="about-us" style="background-image: url('{% static "images/ABOUT US_page-0001.jpg" %}')"></div>
+   </section>
+
+   <!-- Glimpses Section -->
+   <section id="Glimpses">
+    <div class="Glimpses">
+        <h1>Glimpses</h1>
+        <div class="Glimpses-vdo">
+            <video autoplay muted loop controlslist="nodownload nofullscreen noremoteplayback" disablepictureinpicture>
+                <source src="{% static 'videos/glimps_vdo.mp4' %}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+   </section>
+
+   <!-- Tour Section -->
+   <section id="tour">
+    <div class="tour">
+        <h1>What we Committed to</h1>
+        <div>
+            <ul>
+                <li>Vidya</li>
+                <li>Sadvidya</li>
+                <li>Brahmavidya</li>
+                <li>Sanskar Siksha</li>
+            </ul>
+            <ul>
+                <li>Values</li>
+                <li>Dignity</li>
+                <li>Discipline</li>
+                <li>Communication</li>
+            </ul>
+            <ul>
+                <li>Smart Classes</li>
+                <li>Mentorship</li>
+                <li>Infrastructure</li>
+                <li>Skills</li>
+            </ul>
+        </div>
+    </div>
+   </section>
+
+   <!-- Footer -->
+   <footer>
+    <div class="connections">
+        <div class="add">
+            <h1>Visit Us</h1>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.4985932384643!2d78.23064927531331!3d23.005458479185762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397e8bbba0164f2b%3A0x9e2a57d638d52c91!2sDAFFODILS%20PUBLIC%20SCHOOL%20(MPBSE)%20BARELI!5e0!3m2!1sen!2sin!4v1754757375390!5m2!1sen!2sin" 
+                    width="300" height="250" style="border:0px;" allowfullscreen="" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade" alt="google-map"></iframe>
+            </div>
+        </div>
+        <div class="connect">
+            <ul class="phone">
+                <li id="head">Phone Numbers</li>
+                <li>+91-9424434269</li>
+                <li>+91-7748976111</li>
+                <li>+91-7771064222</li>
+                <li>+91-7771046333</li>
+            </ul>
+        </div>
+    </div>
+
+    <ul class="footer-href footer-href-full">
+        <li><a href="https://www.facebook.com/daffodilsgroupofinstitutions?rdid=p6kt740hpQfd4N9d&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1AGMmJZD8P%2F#"><i class="fa-brands fa-facebook"></i> <span>Facebook</span></a></li>
+        <li><a href="https://www.instagram.com/daffodilsgroupofinstitutions/?igsh=MXBlcGY2cWRoYzZ6aQ%3D%3D#"><i class="fa-brands fa-instagram"></i> <span>Instagram</span></a></li>
+        <li><a href="https://www.youtube.com/@daffodilsgroupofinstitutio7062?feature=shared"><i class="fa-brands fa-youtube"></i> <span>Youtube</span></a></li>
+        <li><a href="https://www.daffodilspublicschool.com/?fbclid=PAZXh0bgNhZW0CMTEAAaemvDp0LfIUD4kn7AnxyvgD4RY9Y2sFrLeKSMrQ-AS3qUeq_ENq65echzh6dQ_aem_639EFCI6Ie0rmBqYJxqNZQ"><i class="fa-solid fa-globe"></i> <span>Website</span></a></li>
+    </ul>
+
+    <p>&#169; 2025 Janki Dhakad. All rights reserved.</p>
+   </footer>
+
+   <!-- JS -->
+   <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

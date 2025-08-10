@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mydaffodils</title>
+
+    <link rel="stylesheet" href="{% static 'Css/Contact.css'  %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'images/Logo_Image.jpg' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+    <div class="navbar navfull">
+        <div class="logo logofull">
+            <div class="myLogo" style="background-image: url('{% static "images/Logo_Image.jpg" %}')"></div>
+            <button class="menu menufull" onclick="toggleNavLinks()"><i class="fa-solid fa-bars"></i></button>
+        </div>
+
+        <ul class="navlinks navlinkfull">
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'home' %}">About us</a></li>
+            <li><a href="{% url 'home' %}">Glimpses</a></li>
+            <li><a href="{% url 'contact' %}">Contact Us</a></li>
+        </ul>
+    </div>
+   </header>
+    <h1>Contact Us</h1>
+
+    <form method="post">
+        {% csrf_token %}
+
+           <label for="name">Name:</label>
+        <input type="text" name="name" id="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email"><br><br>
+
+        <label for="email">Contact:</label>
+        <input type="text" name="contact_number" maxlength="10" pattern="\d{10}" placeholder="Enter 10 digit number" required>
+<br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea name="message" id="message" rows="5" cols="30"></textarea><br><br>
+<!-- 
+        {{ form.as_p }} -->
+        <button type="submit">Send</button>
+
+        
+    </form>
+
+    <a class="back" href="{% url 'home' %}">Back to Home</a>
+    
+
+   <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

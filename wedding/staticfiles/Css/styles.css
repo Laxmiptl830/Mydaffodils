@@ -1,0 +1,464 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* overflow-y: hidden; */
+    
+}
+.navfull{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 70px;
+    width:100vw;
+    background-color: #B4E50D;
+    font-size: 1.5rem;
+
+}
+.menu{
+    display: none;
+}
+.myLogo{
+    display: flex;
+    width: 50px;
+      height: 70px;
+    background-image: url("/Logo_Image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2px;
+}
+.navlinkfull{
+    display: flex;
+    justify-content: space-evenly;
+    color:#ffffff;
+    width: 80%;
+    list-style: none;
+    align-items: center;
+    background-color: #B4E50D;
+}
+.navlinkfull li a{
+     text-decoration: none;
+     color: white;
+}
+
+.hero{
+  width:100vw;
+  height: 100vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+  position:relative;
+/* margin-top: 80px; */
+}
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100vw;
+    height: 100%;
+    object-fit: cover; /* make video fill */
+    z-index: -2; /* keep it behind content */
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100vw;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* adjust 0.4 for more/less darkness */
+    z-index: -1;
+}
+.hero-content {
+    position: relative;
+    color: #B4E50D;
+    text-align: center;
+    font-size: 2rem;
+    /* top: 50%; */
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.tagline{
+  padding: 5px;
+   background-color: #395502;
+   color: #e2f107;
+   line-height: 40px;
+   text-align: center;
+   font-weight:500 ;
+   font-size: 2rem;
+}
+.about-us{
+    width:100vw;
+  height: 105vh;
+ display: flex;
+  /* position:relative; */
+/* margin-top: 80px; */
+/* background-color: aqua; */
+background-image: url("/ABOUT\ US_page-0001.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.Glimpses {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* gap: 30px; */
+        padding-top: 40px;
+        height: auto; /* ✅ Let it grow based on content */
+        background-color: #B4E50D;
+    }
+    
+    .Glimpses-vdo video {
+        width: 100vw;
+        height: 100vh; /* ✅ Avoid overflow */
+    }
+
+.Glimpses h1{
+  font-size: 2.5rem;
+  color: #ffffff;
+  background-color: #b3e50d7a;
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+.tour{
+  height: 100vh;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+  flex-direction: column;
+}
+.tour div{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   gap: 4%;
+   
+}
+.tour h1{
+  text-transform: capitalize;
+  color: #395502;
+  font-size: 3rem;
+  
+}
+.tour div ul{
+  list-style: circle;
+
+}
+.tour ul li{
+  color: #395502;
+  margin: 15px;
+  font-size: 2rem;
+
+}
+.connections{
+  display: flex;
+ 
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #B4E50D;
+}
+.connections h1{
+  text-align: center;
+  color: #ffffff;
+  margin: 5px;
+}
+.connect{
+  margin-top: 20px;
+}
+.phone{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  
+}
+.phone li{
+   font-size: 1.5rem;
+   text-decoration: none;
+   margin: 10px;
+   color: #ffffff;
+}
+.phone #head{
+  font-size: 2rem;
+  margin: 20px;
+  color: #395502;
+}
+.footer-href{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ list-style: none;
+ width:99vw;
+ padding-top: 15px;
+ padding-bottom: 15px;
+ background-color: #B4E50D;
+}
+
+.footer-href li a{
+  text-decoration: none;
+  color:#ffffff ;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: #B4E50D;
+}
+
+.footer-href li a span{
+  display: inline;
+}
+footer p{
+  text-align: center;
+  background-color: #B4E50D;
+  padding-top: 10px;
+  color: #ffffff;
+}
+@media(max-width:600px){
+  
+   .navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width:100vw;
+    height: 80px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #B4E50D ;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: fixed;
+    z-index: 1000;
+   }
+   .myLogo{
+    display: flex;
+    width: 50px;
+      height: 70px;
+    background-image: url("/wedding/static/images/Logo_Image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2px;
+    /* border: 1px solid black; */
+}
+   .logo{
+    /* margin-top: 0px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 30px;
+    color: #000000;
+    user-select: none;
+   }
+   .navlinks{
+    margin-top: 20px;
+        display: none;
+    list-style: none;
+    color:#ffffff;
+    text-align: center;
+    background-color: #B4E50D;
+    width:100vw;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+   }
+   .navlinks li{
+    user-select: none;
+    margin: 10px;
+    
+   }
+   .navlinks li a{
+    text-decoration: none;
+    color: #ffffff;
+   }
+   .menu {
+    display: flex;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #ffffff;
+}
+.connections{
+  display: flex;
+ 
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+  background-color: #B4E50D;
+}
+.connections h1{
+  text-align: center;
+  color: #ffffff;
+  margin: 5px;
+}
+.connect{
+  margin-top: 20px;
+}
+.phone{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  
+}
+.phone li{
+   font-size: 1rem;
+   text-decoration: none;
+   margin: 10px;
+   color: #ffffff;
+}
+.phone #head{
+  margin: 20px;
+}
+.footer-href{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+ list-style: none;
+ width:100vw;
+ padding-top: 10px;
+ background-color: #B4E50D;
+}
+
+.footer-href li a{
+  text-decoration: none;
+  color:#ffffff ;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: #B4E50D;
+}
+
+.footer-href li a span{
+  display: none;
+}
+footer p{
+  text-align: center;
+  background-color: #B4E50D;
+  padding-top: 10px;
+  color: #ffffff;
+}
+.hero{
+  width:100vw;
+  height: 50vh;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+  position:relative;
+margin-top: 80px;
+}
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100vw;
+    height: 100%;
+    object-fit: cover; /* make video fill */
+    z-index: -2; /* keep it behind content */
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100vw;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* adjust 0.4 for more/less darkness */
+    z-index: -1;
+}
+.hero-content {
+    position: relative;
+    color: #B4E50D;
+    text-align: center;
+        font-size: 0.7rem;
+    /* top: 50%; */
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.tagline{
+  padding: 5px;
+   background-color: #395502;
+   color: #e2f107;
+   line-height: 20px;
+   text-align: center;
+   font-weight:500 ;
+   font-size: 1rem;
+
+}
+.about-us{
+    width:100vw;
+  height: 28vh;
+ display: flex;
+  position:relative;
+/* margin-top: 80px; */
+/* background-color: aqua; */
+background-image: url("../images/Logo_Image.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+.Glimpses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background:#B4E50D;
+    font-size: 1.5rem; /* Optional background */
+}
+
+.Glimpses-vdo video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Video ko stretch na karte hue fill karega */
+    /* border-radius: 10px; Optional rounding */
+}
+.Glimpses h1{
+  font-size: 1.5rem;
+  color: #ffffff;
+  background-color: #b3e50d7a;
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+.tour{
+  height: 60vh;
+  margin-top: 10px;
+  display: flex;
+    gap: 10px;
+
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.tour div{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+  flex-direction: column;
+}
+.tour h1{
+  text-transform: capitalize;
+  color: #395502;
+    font-size: 1rem;
+
+}
+.tour div ul{
+  list-style:none;
+}
+.tour ul li{
+  color: #395502;
+  margin: 5px;
+  font-size: 1rem;
+}
+}

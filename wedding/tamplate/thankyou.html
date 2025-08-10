@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head><title>Thank You</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'images/Logo_Image.jpg' %}">
+<style>
+    body{
+        background-color: #B4E50D;
+    }
+    h2{
+        font-size: 5rem;
+        font-weight: 700;
+        color: #ffffff;
+        text-align: center;
+    }
+    a{
+        text-align: center;
+        text-decoration: none;
+        border: 2px solid #395502;
+        border-radius: 20px;
+        margin-left: 40%;
+        font-size: 3rem;
+        padding: 5px;
+        background-color: #B4E50D;
+        color: #395502;
+    }
+    a:hover{
+        color: #ffffff;
+    }
+</style>
+</head>
+<body>
+    <h2>Thank you, {{ name }}! We received your message.</h2>
+    <a href="{% url 'home' %}">Back to Home</a>
+</body>
+</html>
