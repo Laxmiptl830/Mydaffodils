@@ -123,6 +123,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 import os
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+import os
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static")
 ]
@@ -139,3 +141,4 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'usertemp565@gmail.com'  # your full Gmail address
 EMAIL_HOST_PASSWORD = 'nnwrofzvmhzacjij'   # your App Password (not Gmail password)
 
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"

@@ -98,7 +98,7 @@
   /* position:relative; */
 /* margin-top: 80px; */
 /* background-color: aqua; */
-background-image: url("/ABOUT\ US_page-0001.jpg");
+background-image: url("/static/images/ABOUT\ US_page-0001.jpg");
 background-repeat: no-repeat;
 background-size: cover;
 }
@@ -244,9 +244,9 @@ footer p{
     display: flex;
     width: 50px;
       height: 70px;
-    background-image: url("/wedding/static/images/Logo_Image.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+   background-image: url("/static/images/Logo_Image.jpg");
+background-repeat: no-repeat;
+background-size: cover;
     background-position: center;
     border-radius: 2px;
     /* border: 1px solid black; */
@@ -403,7 +403,7 @@ margin-top: 80px;
   position:relative;
 /* margin-top: 80px; */
 /* background-color: aqua; */
-background-image: url("../images/Logo_Image.jpg");
+background-image: url("Logo_Image.jpg");
 background-repeat: no-repeat;
 background-size: cover;
 }
