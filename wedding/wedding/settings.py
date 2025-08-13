@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-xaa!i#f1iakywu4oj1i^asphc8h!)gnr^_6lnp5dnck8_7at)$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -74,13 +75,13 @@ WSGI_APPLICATION = 'wedding.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
+      'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'form',
-        'USER': 'root',
-        'PASSWORD': 'sakshi200',
-        'HOST': 'localhost',
-        'PORT': '3306',  # Default MySQL port
+        'NAME': 'b6shcelcnlwcx3llzqf8',
+        'USER': 'u5dfo5glr47mfxov',
+        'PASSWORD': 'M3MJqyGwJyJl6wH8w3b2',  # Clever Cloud se copy karo
+        'HOST': 'b6shcelcnlwcx3llzqf8-mysql.services.clever-cloud.com',
+        'PORT': '3306',
     }
 }
 
