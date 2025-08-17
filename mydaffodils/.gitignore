@@ -1,0 +1,28 @@
+# Python virtual environments
+env/
+venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables
+.env
+
+# Local SQLite database (agar use ho rahi ho)
+db.sqlite3
+
+# Django static files collected for production
+/staticfiles/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE/project settings
+.vscode/
+.idea/
+
+# Logs
+*.log
