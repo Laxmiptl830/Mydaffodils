@@ -1,1 +1,1 @@
-web: gunicorn mydaffodils.wsgi
+web: gunicorn mydaffodils.wsgi --log-file -
