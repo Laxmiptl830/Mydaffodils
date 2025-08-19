@@ -96,5 +96,5 @@ EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://mydaffodils-production.up.railway.app"
+"https://mydaffodils-production.up.railway.app/",
 ]
